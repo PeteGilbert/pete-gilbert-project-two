@@ -23,7 +23,7 @@ h1 {
 // font size very different than stylesheet
 h2 {
     font-family: 'Dokdo', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 69.6px;
     letter-spacing: 10px;
     color: $title-color;
@@ -60,6 +60,11 @@ h4 {
     text-transform: uppercase;
 }
 
+.navigation-font:hover,
+.navigation-font:focus {
+    color: $title-color;
+}
+
 p {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -85,4 +90,9 @@ button {
     color: white;
     border: none;
     padding: 5px 10px;
+}
+
+button:hover,
+button:focus {
+    background-color: $title-color;
 }

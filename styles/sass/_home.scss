@@ -81,14 +81,111 @@ header img {
 
 .links-sect {
     background-color: $background-color-1;
+    padding: 50px 0;
 }
 
 .links-div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .links-div div {
-    width: 50%;
+    width: calc(50% - 6rem - 10px);
+    margin-bottom: 50px;
 }
 
+i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+// This span adds the green circle behind icons
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $button-background;
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+
+// Fourth Section Styling
+
+.vertical-split {
+    background-color: $background-color-2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical-split div {
+    width: 40%;
+
+}
+
+.vertical-split img {
+    width: 40%;
+}
+
+.right-text {
+    padding-right: 200px;
+}
+
+.left-text {
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.left-img {
+    position: relative;
+    top: -25px;
+    box-shadow: 20px 20px 0 $title-color;
+}
+
+.right-img {
+    position: relative;
+    top: 25px;
+    box-shadow: -20px 20px 0 $title-color;
+}
+
+.banner {
+    width: 100%;
+}
+
+// Fifth Section Styling
+
+.trials {
+    background-color: $background-color-1;
+    padding: 100px 0;
+    // Fixing ghost space
+    margin-top: -1px;
+}
+
+.trials h2 {
+    text-align: center;
+    
+}
+
+.trials p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.trials button {
+    width: 15%;
+    margin-left: 42.5%;
+    margin-right: 42.5%
+}
+
+footer {
+    background-color: $background-color-2;
+    text-align: center;
+}

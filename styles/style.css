@@ -258,7 +258,7 @@ h1 {
 
 h2 {
   font-family: 'Dokdo', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 69.6px;
   letter-spacing: 10px;
   color: #FFC600;
@@ -293,6 +293,11 @@ h4 {
   list-style: none;
   color: white;
   text-transform: uppercase;
+}
+
+.navigation-font:hover,
+.navigation-font:focus {
+  color: #FFC600;
 }
 
 p {
@@ -344,6 +349,11 @@ button {
   color: white;
   border: none;
   padding: 5px 10px;
+}
+
+button:hover,
+button:focus {
+  background-color: #FFC600;
 }
 
 header {
@@ -434,6 +444,7 @@ header img {
 
 .links-sect {
   background-color: #1E140E;
+  padding: 50px 0;
 }
 
 .links-div {
@@ -442,8 +453,118 @@ header img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .links-div div {
-  width: 50%;
+  width: calc(50% - 6rem - 10px);
+  margin-bottom: 50px;
+}
+
+i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #555F02;
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.vertical-split {
+  background-color: #262725;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical-split div {
+  width: 40%;
+}
+
+.vertical-split img {
+  width: 40%;
+}
+
+.right-text {
+  padding-right: 200px;
+}
+
+.left-text {
+  padding-left: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.left-img {
+  position: relative;
+  top: -25px;
+  -webkit-box-shadow: 20px 20px 0 #FFC600;
+          box-shadow: 20px 20px 0 #FFC600;
+}
+
+.right-img {
+  position: relative;
+  top: 25px;
+  -webkit-box-shadow: -20px 20px 0 #FFC600;
+          box-shadow: -20px 20px 0 #FFC600;
+}
+
+.banner {
+  width: 100%;
+}
+
+.trials {
+  background-color: #1E140E;
+  padding: 100px 0;
+  margin-top: -1px;
+}
+
+.trials h2 {
+  text-align: center;
+}
+
+.trials p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.trials button {
+  width: 15%;
+  margin-left: 42.5%;
+  margin-right: 42.5%;
+}
+
+footer {
+  background-color: #262725;
+  text-align: center;
 }

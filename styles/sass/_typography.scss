@@ -1,0 +1,60 @@
+// font-family: 'Dokdo', cursive;
+// font-family: 'Lato', sans-serif;
+
+* {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-family: 'Dokdo', cursive;
+    font-size: 11.5rem;
+}
+
+h2 {
+    font-family: 'Dokdo', cursive;
+    font-size: 10.5rem;
+    line-height: 6.96rem;
+    letter-spacing: 1.9rem;
+}
+
+h3 {
+    font-family: 'Dokdo', cursive;
+    font-size: 4.5rem;
+    line-height: 5.8rem;
+    letter-spacing: .49rem;
+}
+
+.logo {
+    font-family: 'Dokdo', cursive;
+    font-size: 4.15rem;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Dokdo', cursive;
+    font-size: 4rem;
+    line-height: 5.8rem;
+    letter-spacing: 4.3rem;
+}
+
+.navigation-font {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.2rem;
+}
+
+::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.2rem;
+}

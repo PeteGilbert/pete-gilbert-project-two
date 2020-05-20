@@ -1,0 +1,17 @@
+.blog-body {
+    background-color: $background-color-1;
+}
+
+.blog-header {
+    background-image: url(../mindnSoul-final-images/blog-image-1.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+
+.blog-header-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 50%;
+    width: 100%;
+}

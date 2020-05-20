@@ -258,9 +258,9 @@ h1 {
 
 h2 {
   font-family: 'Dokdo', cursive;
-  font-size: 3rem;
+  font-size: 10.5rem;
   line-height: 69.6px;
-  letter-spacing: 10px;
+  letter-spacing: 10.9px;
   color: #FFC600;
   margin: 0;
 }
@@ -356,7 +356,7 @@ button:focus {
   background-color: #FFC600;
 }
 
-header {
+.home-header {
   background-image: url(../mindnSoul-final-images/home-image-1.jpg);
   background-size: cover;
   height: 80vh;
@@ -382,7 +382,7 @@ header {
   padding-left: 40px;
 }
 
-header img {
+.home-header img {
   position: relative;
   bottom: -20%;
   float: left;
@@ -549,7 +549,7 @@ span {
   margin-top: -1px;
 }
 
-.trials h2 {
+.trials h3 {
   text-align: center;
 }
 
@@ -567,4 +567,28 @@ span {
 footer {
   background-color: #262725;
   text-align: center;
+}
+
+.blog-body {
+  background-color: #1E140E;
+}
+
+.blog-header {
+  background-image: url(../mindnSoul-final-images/blog-image-1.jpg);
+  background-size: cover;
+  height: 80vh;
+}
+
+.blog-header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 50%;
+  width: 100%;
 }

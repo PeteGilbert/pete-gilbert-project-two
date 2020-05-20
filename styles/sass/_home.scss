@@ -1,4 +1,4 @@
-header {
+.home-header {
     background-image: url(../mindnSoul-final-images/home-image-1.jpg);
     background-size: cover;
     height: 80vh;
@@ -20,7 +20,7 @@ header {
     padding-left: 40px;
 }
 
-header img {
+.home-header img {
     position: relative;
     bottom: -20%;
     float: left;
@@ -169,7 +169,7 @@ span {
     margin-top: -1px;
 }
 
-.trials h2 {
+.trials h3 {
     text-align: center;
     
 }

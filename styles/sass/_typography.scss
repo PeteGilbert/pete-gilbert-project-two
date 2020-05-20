@@ -1,60 +1,88 @@
-// font-family: 'Dokdo', cursive;
-// font-family: 'Lato', sans-serif;
+// Name of these variables is taken from style sheet, perhaps descriptive names are better?
+$ice-blue: #FAFFFE;
+$title-color: #FFC600;
+$background-color-2: #262725;
+$button-background: #555F02;
+$background-color-1: #1E140E;
 
 * {
     font-size: 62.5%;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'Dokdo', cursive;
     font-size: 11.5rem;
+    color: $title-color;
+    margin: 0;
 }
 
+// font size very different than stylesheet
 h2 {
     font-family: 'Dokdo', cursive;
-    font-size: 10.5rem;
-    line-height: 6.96rem;
-    letter-spacing: 1.9rem;
+    font-size: 4rem;
+    line-height: 69.6px;
+    letter-spacing: 10px;
+    color: $title-color;
+    margin: 0;
 }
 
 h3 {
     font-family: 'Dokdo', cursive;
     font-size: 4.5rem;
-    line-height: 5.8rem;
-    letter-spacing: .49rem;
+    line-height: 5.8px;
+    letter-spacing: .49px;
+    color: $title-color;
 }
 
 .logo {
     font-family: 'Dokdo', cursive;
     font-size: 4.15rem;
-    text-align: center;
+    color: $title-color;
 }
 
 h4 {
     font-family: 'Dokdo', cursive;
     font-size: 4rem;
-    line-height: 5.8rem;
-    letter-spacing: 4.3rem;
+    line-height: 58px;
+    letter-spacing: 43px;
 }
 
 .navigation-font {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 2rem;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
 }
 
 p {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    line-height: 3.2rem;
-    letter-spacing: 0.2rem;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin: 0;
+    color: white;
 }
 
 ::placeholder {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 2rem;
-    line-height: 3.2rem;
-    letter-spacing: 0.2rem;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+button {
+    font-family: 'Dokdo', cursive;
+    font-size: 3.5rem;
+    background-color: $button-background;
+    color: white;
+    border: none;
+    padding: 5px 10px;
 }

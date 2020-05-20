@@ -235,84 +235,215 @@ html {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 * {
   font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
   font-family: 'Dokdo', cursive;
   font-size: 11.5rem;
+  color: #FFC600;
+  margin: 0;
 }
 
 h2 {
   font-family: 'Dokdo', cursive;
-  font-size: 10.5rem;
-  line-height: 6.96rem;
-  letter-spacing: 1.9rem;
+  font-size: 4rem;
+  line-height: 69.6px;
+  letter-spacing: 10px;
+  color: #FFC600;
+  margin: 0;
 }
 
 h3 {
   font-family: 'Dokdo', cursive;
   font-size: 4.5rem;
-  line-height: 5.8rem;
-  letter-spacing: .49rem;
+  line-height: 5.8px;
+  letter-spacing: .49px;
+  color: #FFC600;
 }
 
 .logo {
   font-family: 'Dokdo', cursive;
   font-size: 4.15rem;
-  text-align: center;
+  color: #FFC600;
 }
 
 h4 {
   font-family: 'Dokdo', cursive;
   font-size: 4rem;
-  line-height: 5.8rem;
-  letter-spacing: 4.3rem;
+  line-height: 58px;
+  letter-spacing: 43px;
 }
 
 .navigation-font {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 2rem;
+  list-style: none;
+  color: white;
+  text-transform: uppercase;
 }
 
 p {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  margin: 0;
+  color: white;
 }
 
 ::-webkit-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
 }
 
 :-ms-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
 }
 
 ::-ms-input-placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
 }
 
 ::placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+button {
+  font-family: 'Dokdo', cursive;
+  font-size: 3.5rem;
+  background-color: #555F02;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+header {
+  background-image: url(../mindnSoul-final-images/home-image-1.jpg);
+  background-size: cover;
+  height: 80vh;
+}
+
+.logo {
+  float: left;
+  padding-left: 10%;
+  padding-top: 40px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 40px;
+}
+
+.navigation-font {
+  padding-left: 40px;
+}
+
+header img {
+  position: relative;
+  bottom: -20%;
+  float: left;
+}
+
+.title-pos {
+  position: relative;
+  top: 23%;
+  left: 3%;
+}
+
+.welcome-to {
+  color: white;
+  position: relative;
+  left: -26%;
+  font-size: 4rem;
+}
+
+.new-adventure {
+  background-color: #1E140E;
+}
+
+.new-adventure-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.new-adventure-text {
+  width: 70%;
+  margin-right: 75px;
+}
+
+.new-adventure-all img {
+  -webkit-box-shadow: -20px 20px 0 #555F02;
+          box-shadow: -20px 20px 0 #555F02;
+  width: 30%;
+}
+
+.gallery {
+  background-color: #262725;
+}
+
+.gallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0;
+}
+
+.gallery img {
+  width: 31%;
+}
+
+.links-sect {
+  background-color: #1E140E;
+}
+
+.links-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.links-div div {
+  width: 50%;
 }

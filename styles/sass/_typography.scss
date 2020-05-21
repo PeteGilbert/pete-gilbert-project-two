@@ -45,9 +45,10 @@ h3 {
 
 h4 {
     font-family: 'Dokdo', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 58px;
-    letter-spacing: 43px;
+    letter-spacing: 4.3px;
+    color: white;
 }
 
 .navigation-font {
@@ -80,6 +81,16 @@ p {
     font-size: 2rem;
     line-height: 32px;
     letter-spacing: 2px;
+    opacity: 1;
+}
+
+textarea {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 32px;
+    letter-spacing: 2px;
+    opacity: 1;
 }
 
 button {

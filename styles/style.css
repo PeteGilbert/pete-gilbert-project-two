@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -236,7 +237,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1140px;
+  max-width: 1600px;
   width: 90%;
   margin: 0 auto;
 }
@@ -281,9 +282,10 @@ h3 {
 
 h4 {
   font-family: 'Dokdo', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 58px;
-  letter-spacing: 43px;
+  letter-spacing: 4.3px;
+  color: white;
 }
 
 .navigation-font {
@@ -316,6 +318,7 @@ p {
   font-size: 2rem;
   line-height: 32px;
   letter-spacing: 2px;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
@@ -324,6 +327,7 @@ p {
   font-size: 2rem;
   line-height: 32px;
   letter-spacing: 2px;
+  opacity: 1;
 }
 
 ::-ms-input-placeholder {
@@ -332,6 +336,7 @@ p {
   font-size: 2rem;
   line-height: 32px;
   letter-spacing: 2px;
+  opacity: 1;
 }
 
 ::placeholder {
@@ -340,6 +345,16 @@ p {
   font-size: 2rem;
   line-height: 32px;
   letter-spacing: 2px;
+  opacity: 1;
+}
+
+textarea {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  opacity: 1;
 }
 
 button {
@@ -360,12 +375,23 @@ button:focus {
   background-image: url(../mindnSoul-final-images/home-image-1.jpg);
   background-size: cover;
   height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .logo {
   float: left;
-  padding-left: 10%;
+  padding-left: 100px;
   padding-top: 40px;
+  width: 20%;
+}
+
+header nav {
+  width: 80%;
+  padding-right: 100px;
 }
 
 .header-nav {
@@ -385,19 +411,22 @@ button:focus {
 .home-header img {
   position: relative;
   bottom: -20%;
-  float: left;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .title-pos {
-  position: relative;
-  top: 23%;
-  left: 3%;
+  margin-left: 50px;
+  margin-top: 150px;
 }
 
 .welcome-to {
   color: white;
   position: relative;
-  left: -26%;
   font-size: 4rem;
 }
 
@@ -577,6 +606,11 @@ footer {
   background-image: url(../mindnSoul-final-images/blog-image-1.jpg);
   background-size: cover;
   height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .blog-header-title {
@@ -591,4 +625,264 @@ footer {
           justify-content: flex-start;
   height: 50%;
   width: 100%;
+  padding-left: 100px;
+}
+
+.discover-sect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.come-and-discover {
+  width: 60%;
+  border-bottom: 1px solid #555F02;
+  border-right: 1px solid #555F02;
+}
+
+.come-and-discover img {
+  width: calc(100% - 20px);
+  -webkit-box-shadow: 20px 20px 0 #555F02;
+          box-shadow: 20px 20px 0 #555F02;
+  position: relative;
+  top: -100px;
+}
+
+.discover-text {
+  padding: 0 50px 50px 100px;
+}
+
+.discover-text p {
+  margin-top: 20px;
+}
+
+.discover-text h3 {
+  margin-bottom: 20px;
+}
+
+.discover-text i,
+.discover-text b {
+  font-size: 2rem;
+}
+
+aside {
+  width: 20%;
+  height: 100%;
+  margin-top: 150px;
+  background-color: #555F02;
+}
+
+aside h4 {
+  margin: 0;
+}
+
+aside img {
+  -webkit-box-shadow: -20px 20px 0 #555F02;
+          box-shadow: -20px 20px 0 #555F02;
+  width: 100%;
+}
+
+.aside-text {
+  -webkit-box-shadow: -20px 0px 0 #555F02;
+          box-shadow: -20px 0px 0 #555F02;
+}
+
+aside ul {
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+aside ul li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  margin: 0;
+  color: white;
+  list-style: none;
+}
+
+aside ul li::before {
+  content: "• ";
+  color: #FFC600;
+}
+
+.comments-sect {
+  width: 60%;
+  padding: 0 50px 50px 100px;
+}
+
+.comments-sect h3 {
+  color: white;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.comment img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100%;
+}
+
+.comment-text {
+  padding-left: 50px;
+}
+
+.comment-date-name {
+  color: #FFC600;
+}
+
+.blog-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#name,
+#email {
+  width: 46%;
+  height: 40px;
+  background-color: #1E140E;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid #FFC600;
+  font-size: 2rem;
+  padding-left: 40px;
+}
+
+#comment {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  background-color: #1E140E;
+  color: white;
+  border: 1px solid #FFC600;
+  font-size: 2rem;
+  padding: 40px;
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.contact-body {
+  background-color: #1E140E;
+}
+
+.contact-header {
+  background-image: url(../mindnSoul-final-images/contact-image-1.jpg);
+  background-size: cover;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 50%;
+  width: 100%;
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin-left: 50px;
+  background-color: #262725;
+  padding: 70px 50px 50px 50px;
+  position: relative;
+  top: -200px;
+  -webkit-box-shadow: 20px 20px 0 #FFC600;
+          box-shadow: 20px 20px 0 #FFC600;
+}
+
+#name,
+#email {
+  width: 46%;
+  height: 40px;
+  background-color: #262725;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid #FFC600;
+  font-size: 2rem;
+  padding-left: 40px;
+}
+
+#message {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  background-color: #262725;
+  color: white;
+  border: 1px solid #FFC600;
+  font-size: 2rem;
+  padding: 40px;
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-info {
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.contact-info i {
+  color: #FFC600;
+  padding-right: 25px;
+}
+
+.contact-info p {
+  margin-top: 25px;
+}
+
+address {
+  font-style: normal;
 }

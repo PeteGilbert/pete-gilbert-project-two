@@ -2,12 +2,20 @@
     background-image: url(../mindnSoul-final-images/home-image-1.jpg);
     background-size: cover;
     height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo {
     float: left;
-    padding-left: 10%;
+    padding-left: 100px;
     padding-top: 40px;
+    width: 20%;
+}
+
+header nav {
+    width: 80%;
+    padding-right: 100px
 }
 
 .header-nav {
@@ -23,20 +31,20 @@
 .home-header img {
     position: relative;
     bottom: -20%;
-    float: left;
 }
 
+.header-content {
+    display:flex;
+}
 
 .title-pos {
-    position: relative;
-    top: 23%;
-    left: 3%;
+    margin-left: 50px;
+    margin-top: 150px;
 }
 
 .welcome-to {
     color: white;
     position: relative;
-    left: -26%;
     font-size: 4rem;
 
 }

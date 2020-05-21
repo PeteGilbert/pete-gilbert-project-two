@@ -18,6 +18,13 @@ header nav {
     padding-right: 100px
 }
 
+.ham-icon,
+.ham-input {
+    display: none;
+    position: absolute;
+    top:-500px;
+}
+
 .header-nav {
     display: flex;
     justify-content: flex-end;
@@ -31,6 +38,7 @@ header nav {
 .home-header img {
     position: relative;
     bottom: -20%;
+    max-width: 50%;
 }
 
 .header-content {
@@ -46,6 +54,7 @@ header nav {
     color: white;
     position: relative;
     font-size: 4rem;
+    z-index: 0;
 
 }
 
@@ -68,6 +77,9 @@ header nav {
 .new-adventure-all img {
     box-shadow: -20px 20px 0 $button-background;
     width: 30%;
+
+    // setting max height to prevent distortion between breakpoints
+    max-height: 35vw;
 }
 
 // Second Section Styling
@@ -109,7 +121,7 @@ i {
 }
 
 // This span adds the green circle behind icons
-span {
+.background-circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,6 +131,10 @@ span {
     width: 4.5rem;
     margin-right: 10px;
     margin-top: 15px;
+}
+
+.links-sect h3 {
+    margin-top: 10px;
 }
 
 
@@ -142,11 +158,13 @@ span {
 }
 
 .right-text {
-    padding-right: 200px;
+    padding-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .left-text {
-    padding-left: 200px;
+    padding-left: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -163,6 +181,7 @@ span {
     top: 25px;
     box-shadow: -20px 20px 0 $title-color;
 }
+
 
 .banner {
     width: 100%;
@@ -187,13 +206,176 @@ span {
     margin: 0 auto;
 }
 
-.trials button {
-    width: 15%;
-    margin-left: 42.5%;
-    margin-right: 42.5%
+.trials-button-pos {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
     background-color: $background-color-2;
     text-align: center;
+}
+
+
+
+// RESPONSIVE DESIGN
+
+@media (max-width: 1200px) {
+    // Would confirm with designer how they would like this image to perform on tablet
+    .home-header img {
+        max-width: 30%;
+    }
+
+    .vertical-split div {
+        width: 45%;
+    
+    }
+    
+    .vertical-split img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    // header mobile
+    .header-content {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .logo {
+        display: none;
+    }
+
+    .home-header {
+        height: 100vh;
+    }
+
+    .home-header img {
+        max-width: 50%;
+        bottom: 0;
+    }
+
+    .title-pos {
+        margin-top: 0px;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 20vw;
+    }
+    
+    .header-nav {
+        display: none;
+    }
+
+    // First Section Mobile
+
+    .new-adventure {
+        background-color: $background-color-1;
+    }
+    
+    .new-adventure-all {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 50px;
+    }
+    
+    .new-adventure-text {
+        width: 100%;
+        margin: 0px 20px;
+
+    }
+    .new-adventure-all img {
+        box-shadow: -20px 20px 0 $button-background;
+        width: 90%;
+    
+        // preventing scaling with max-height above
+        max-height: 1000px;;
+    }
+
+    .new-adventure-all button {
+        width: 100%;
+    }
+    
+    // Second Section Mobile
+    
+    
+    .gallery .wrapper {
+        flex-direction: column;
+    }
+    .gallery img {
+        width: 100%;
+        margin-top: 50px;
+    }
+    // Third Section Mobile
+
+    .links-div div {
+        width: calc(100% - 6rem - 10px);
+    }
+    
+    
+    // Fourth Section Mobile
+
+    .vertical-split {
+        background-color: $background-color-2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vertical-split div,
+    .vertical-split img {
+        width: 90%;
+    }
+
+
+    .right-text,
+    .left-text {
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+        order: 2;
+    }
+
+    .left-text {
+        order: 4;
+    }
+
+
+    .left-img {
+        position: relative;
+        top: -25px;
+        box-shadow: 20px 20px 0 $title-color;
+        order: 1
+    }
+
+    .right-img {
+        position: relative;
+        top: 25px;
+        box-shadow: -20px 20px 0 $title-color;
+        order: 3;
+        margin-bottom: 50px;
+    }
+
+    .vertical-split button {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    // Fifth Section Mobile
+    .trials p {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .trials button {
+        width: 90%;
+    }
 }

@@ -1,0 +1,51 @@
+@media (max-width: 900px){
+.ham-input,
+.ham-icon {
+    display: block;
+    float:right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 4rem;
+}
+}
+
+.ham-icon {
+    z-index: 2;
+}
+
+.ham-input:hover ~ .ham-icon{
+    color: $title-color;
+}
+
+// bringing input button in front of icon and hiding it
+.ham-input {
+    z-index: 10;
+    opacity: 0;
+}
+
+.ham-input:checked ~ .header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    z-index: 2;
+}
+
+.ham-input:checked ~ .ham-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 400px;
+    width: 150px;
+    background-color: $button-background;
+    z-index: 1;
+}
+
+.ham-input:checked ~ .header-nav a {
+    padding: 20px;
+}

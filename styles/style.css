@@ -269,7 +269,7 @@ h2 {
 h3 {
   font-family: 'Dokdo', cursive;
   font-size: 4.5rem;
-  line-height: 5.8px;
+  line-height: 58px;
   letter-spacing: .49px;
   color: #FFC600;
 }
@@ -394,6 +394,13 @@ header nav {
   padding-right: 100px;
 }
 
+.ham-icon,
+.ham-input {
+  display: none;
+  position: absolute;
+  top: -500px;
+}
+
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,6 +418,7 @@ header nav {
 .home-header img {
   position: relative;
   bottom: -20%;
+  max-width: 50%;
 }
 
 .header-content {
@@ -428,6 +436,7 @@ header nav {
   color: white;
   position: relative;
   font-size: 4rem;
+  z-index: 0;
 }
 
 .new-adventure {
@@ -451,6 +460,7 @@ header nav {
   -webkit-box-shadow: -20px 20px 0 #555F02;
           box-shadow: -20px 20px 0 #555F02;
   width: 30%;
+  max-height: 35vw;
 }
 
 .gallery {
@@ -497,7 +507,7 @@ i {
   color: white;
 }
 
-span {
+.background-circle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,6 +523,10 @@ span {
   width: 4.5rem;
   margin-right: 10px;
   margin-top: 15px;
+}
+
+.links-sect h3 {
+  margin-top: 10px;
 }
 
 .vertical-split {
@@ -539,11 +553,16 @@ span {
 }
 
 .right-text {
-  padding-right: 200px;
+  padding-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .left-text {
-  padding-left: 200px;
+  padding-left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,15 +606,168 @@ span {
   margin: 0 auto;
 }
 
-.trials button {
-  width: 15%;
-  margin-left: 42.5%;
-  margin-right: 42.5%;
+.trials-button-pos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer {
   background-color: #262725;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .home-header img {
+    max-width: 30%;
+  }
+  .vertical-split div {
+    width: 45%;
+  }
+  .vertical-split img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logo {
+    display: none;
+  }
+  .home-header {
+    height: 100vh;
+  }
+  .home-header img {
+    max-width: 50%;
+    bottom: 0;
+  }
+  .title-pos {
+    margin-top: 0px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 20vw;
+  }
+  .header-nav {
+    display: none;
+  }
+  .new-adventure {
+    background-color: #1E140E;
+  }
+  .new-adventure-all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 50px;
+  }
+  .new-adventure-text {
+    width: 100%;
+    margin: 0px 20px;
+  }
+  .new-adventure-all img {
+    -webkit-box-shadow: -20px 20px 0 #555F02;
+            box-shadow: -20px 20px 0 #555F02;
+    width: 90%;
+    max-height: 1000px;
+  }
+  .new-adventure-all button {
+    width: 100%;
+  }
+  .gallery .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .links-div div {
+    width: calc(100% - 6rem - 10px);
+  }
+  .vertical-split {
+    background-color: #262725;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .vertical-split div,
+  .vertical-split img {
+    width: 90%;
+  }
+  .right-text,
+  .left-text {
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .left-text {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .left-img {
+    position: relative;
+    top: -25px;
+    -webkit-box-shadow: 20px 20px 0 #FFC600;
+            box-shadow: 20px 20px 0 #FFC600;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .right-img {
+    position: relative;
+    top: 25px;
+    -webkit-box-shadow: -20px 20px 0 #FFC600;
+            box-shadow: -20px 20px 0 #FFC600;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-bottom: 50px;
+  }
+  .vertical-split button {
+    width: 100%;
+    margin: 50px 0;
+  }
+  .banner {
+    width: 100%;
+  }
+  .trials p {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .trials button {
+    width: 90%;
+  }
 }
 
 .blog-body {
@@ -885,4 +1057,62 @@ form button {
 
 address {
   font-style: normal;
+}
+
+@media (max-width: 900px) {
+  .ham-input,
+  .ham-icon {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 4rem;
+  }
+}
+
+.ham-icon {
+  z-index: 2;
+}
+
+.ham-input:hover ~ .ham-icon {
+  color: #FFC600;
+}
+
+.ham-input {
+  z-index: 10;
+  opacity: 0;
+}
+
+.ham-input:checked ~ .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  z-index: 2;
+}
+
+.ham-input:checked ~ .ham-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 400px;
+  width: 150px;
+  background-color: #555F02;
+  z-index: 1;
+}
+
+.ham-input:checked ~ .header-nav a {
+  padding: 20px;
 }

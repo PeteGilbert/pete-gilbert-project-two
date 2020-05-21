@@ -12,15 +12,22 @@
     <header class="home-header">
         <p class="logo">Mindn'Soul</p>
         <nav>
-            <ul class="header-nav">
-                <a href="#"><li class="navigation-font">Home</li></a>
-                <a href="#"><li class="navigation-font">About</li></a>
-                <a href="#"><li class="navigation-font">Blog</li></a>
-                <a href="#"><li class="navigation-font">Contact</li></a>
-            </ul>
+            <div class="menu-toggle">
+                <!-- Structure for hamburger -->
+                <input type="checkbox" class="ham-input">
+                <i class="fas fa-bars ham-icon"></i>
+                <div class="ham-background"></div>
+
+                <ul class="header-nav">
+                    <a href="#"><li class="navigation-font">Home</li></a>
+                    <a href="#"><li class="navigation-font">About</li></a>
+                    <a href="#"><li class="navigation-font">Blog</li></a>
+                    <a href="#"><li class="navigation-font">Contact</li></a>
+                </ul>
+            </div>
         </nav>
         <div class="header-content">
-            <img src="./MindnSoul-final-images/group.jpg" alt="Lady in yoga pose">
+            <img src="./MindnSoul-final-images/group.jpg" alt="Lady in yoga pose" class="home-header-img">
             <div class="title-pos">
                 <p class="welcome-to">welcome to</p>
                 <h1>Mindn'Soul</h1>
@@ -49,23 +56,23 @@
 
     <section class="links-sect">
         <div class="wrapper links-div">
-            <span><i class="fas fa-home"></i></span>
+            <span class="background-circle"><i class="fas fa-home"></i></span>
             <div>
                 <h3>Customized Offers</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam dolore optio tempore cumque ab, fugiat reiciendis enim magnam nisi.</p>
             </div>
 
-            <span><i class="fas fa-users"></i></span>
+            <span class="background-circle"><i class="fas fa-users"></i></span>
             <div>
                 <h3>Community</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nesciunt accusamus ratione temporibus illum qui sunt repudiandae aspernatur cum ipsam.</p>
             </div>
-            <span><i class="fas fa-file"></i></span>
+            <span class="background-circle"><i class="fas fa-file"></i></span>
             <div>
                 <h3>Blog</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, repellendus? Quo debitis, repellendus qui totam facilis expedita fuga mollitia ipsum?</p>
             </div>
-            <span><i class="fas fa-phone"></i></span>
+            <span class="background-circle"><i class="fas fa-phone"></i></span>
             <div>
                 <h3>Get in Touch</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in, molestias amet dolorum rerum itaque esse soluta reiciendis. Veniam, consequatur.</p>
@@ -92,7 +99,9 @@
     <section class="trials">
         <h3>Free trials</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci qui dicta velit obcaecati, rem quisquam odio delectus assumenda aperiam autem veritatis quod quia dolore aliquam aspernatur sit quis neque deserunt. Ipsum obcaecati accusamus ratione ad? Earum nostrum quis ut odio nemo enim possimus accusamus, mollitia tempora cum error, aut veritatis!</p>
-        <button>Find out More</button>
+        <div class="trials-button-pos"> 
+            <button>Find out More</button>
+        </div>  
     </section>
     <footer>
         <p>Copyright © 2019 Hackeryou</p>

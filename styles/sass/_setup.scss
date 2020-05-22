@@ -9,9 +9,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
-// Setting wrapper for ultra wide monitors only as much of the style is attached to side of viewport.
+// Setting wrapper for ultra wide monitors only as much of the style is attached to side of viewport. TBH I may prefer to not have a wrapper for this specific design.
 .wrapper {
-    max-width: 1600px;
-    width: 90%;
+    max-width: 1700px;
     margin: 0 auto;
 }

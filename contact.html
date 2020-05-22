@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0f164095e1.js" crossorigin="anonymous"></script>
 </head>
-<body class="contact-body">
+<body class="contact-body wrapper">
     <header class="contact-header">
         <p class="logo">Mindn'Soul</p>
         <nav>
@@ -30,13 +30,13 @@
     </header>
     <section class="contact-content">
         <form action="Post" class="contact-form">
-            <label for="name">Name</label>
+            <label for="name" class="visually-hidden">Name</label>
             <input type="text" name="" id="name" placeholder="Name">
 
-            <label for="email">Email address</label>
+            <label for="email" class="visually-hidden">Email address</label>
             <input type="email" name="" id="email" placeholder="Email address">
 
-            <label for="message">Message</label>
+            <label for="message" class="visually-hidden">Message</label>
             <textarea name="" id="message">Comment</textarea> 
             <button type="submit">Submit</button>
         </form>

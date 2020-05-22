@@ -1,7 +1,14 @@
+
+
+// Setting background color for ultra wide displays
+.home-body {
+    background-color: $background-color-1;
+}
+
 .home-header {
     background-image: url(../mindnSoul-final-images/home-image-1.jpg);
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -251,7 +258,6 @@ footer {
     }
 
     .home-header {
-        height: 100vh;
         min-height: 525px;
     }
 
@@ -289,8 +295,8 @@ footer {
     .new-adventure-text {
         width: 100%;
         margin: 0px 20px;
-
     }
+
     .new-adventure-all img {
         box-shadow: -20px 20px 0 $button-background;
         width: 90%;

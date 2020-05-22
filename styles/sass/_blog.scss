@@ -5,7 +5,7 @@
 .blog-header {
     background-image: url(../mindnSoul-final-images/blog-image-1.jpg);
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -131,6 +131,16 @@ aside ul li::before {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+  }
 
 #name,
 #email {

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0f164095e1.js" crossorigin="anonymous"></script>
 </head>
-<body class="blog-body">
+<body class="blog-body wrapper">
     <header class="blog-header">
         <p class="logo">Mindn'Soul</p>
         <nav>
@@ -74,13 +74,13 @@
         </div>
 
         <form action="Post" class="blog-form">
-            <label for="name">Name</label>
+            <label for="name" class="visually-hidden">Name</label>
             <input type="text" name="" id="name" placeholder="Name">
 
-            <label for="email">Email address</label>
+            <label for="email" class="visually-hidden">Email address</label>
             <input type="email" name="" id="email" placeholder="Email address">
 
-            <label for="comment">Comment</label>
+            <label for="comment" class="visually-hidden">Comment</label>
             <textarea name="" id="comment">Comment</textarea> 
             <button type="submit">Post Comment</button>
         </form>

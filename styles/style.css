@@ -302,7 +302,8 @@ h4 {
   color: #FFC600;
 }
 
-p {
+p,
+address {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 2rem;
@@ -419,6 +420,8 @@ header nav {
   position: relative;
   bottom: -20%;
   max-width: 50%;
+  -webkit-filter: sepia();
+          filter: sepia();
 }
 
 .header-content {
@@ -640,14 +643,15 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .logo {
+  .home-header .logo {
     display: none;
   }
   .home-header {
     height: 100vh;
+    min-height: 525px;
   }
   .home-header img {
-    max-width: 50%;
+    max-width: 60%;
     bottom: 0;
   }
   .title-pos {
@@ -933,7 +937,6 @@ aside ul li::before {
   border: 0;
   border-bottom: 1px solid #FFC600;
   font-size: 2rem;
-  padding-left: 40px;
 }
 
 #comment {
@@ -951,6 +954,75 @@ aside ul li::before {
 form button {
   width: 100%;
   margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .comments-sect {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    padding-left: 10%;
+  }
+  .blog-header {
+    height: 400px;
+  }
+  .blog-header-title {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100px;
+  }
+  .discover-sect {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .come-and-discover {
+    width: 100%;
+    border: none;
+  }
+  .discover-text {
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  aside {
+    width: 100%;
+  }
+  .aside-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside p {
+    width: 90%;
+  }
+  .comments-sect {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .comment img {
+    width: 20%;
+  }
+  .comment-text {
+    padding-left: 20px;
+  }
+  #name,
+  #email {
+    padding: 0;
+  }
 }
 
 .contact-body {
@@ -1003,8 +1075,8 @@ form button {
           box-shadow: 20px 20px 0 #FFC600;
 }
 
-#name,
-#email {
+.contact-body #name,
+.contact-body #email {
   width: 46%;
   height: 40px;
   background-color: #262725;
@@ -1042,8 +1114,9 @@ form button {
 }
 
 .contact-info {
-  margin-right: 100px;
+  margin: 0 auto;
   margin-top: 100px;
+  width: 20%;
 }
 
 .contact-info i {
@@ -1057,6 +1130,40 @@ form button {
 
 address {
   font-style: normal;
+}
+
+@media (max-width: 1200px) {
+  .contact-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact-info {
+    margin-top: -100px;
+    margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-header-title {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .contact-body #name,
+  .contact-body #email {
+    width: 100%;
+  }
+  .contact-body #name {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 900px) {

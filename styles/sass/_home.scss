@@ -39,6 +39,7 @@ header nav {
     position: relative;
     bottom: -20%;
     max-width: 50%;
+    filter: sepia();
 }
 
 .header-content {
@@ -243,16 +244,19 @@ footer {
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
-    .logo {
+    
+    // removing logo as it looks doubled with H1 on mobile
+    .home-header .logo {
         display: none;
     }
 
     .home-header {
         height: 100vh;
+        min-height: 525px;
     }
 
     .home-header img {
-        max-width: 50%;
+        max-width: 60%;
         bottom: 0;
     }
 

@@ -141,7 +141,6 @@ aside ul li::before {
     border: 0;
     border-bottom: 1px solid $title-color;
     font-size: 2rem;
-    padding-left: 40px;
 }
 
 #comment {
@@ -161,3 +160,76 @@ form button {
     margin-top: 50px;
 }
 
+
+@media(max-width: 1200px) {
+    .comments-sect {
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 900px) {
+    .logo {
+        padding-left: 10%;
+    }
+    
+    .blog-header {
+        height: 400px;
+    }
+    .blog-header-title {
+        padding-left: 0;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .discover-sect {
+        flex-wrap: wrap;
+    }
+    
+    .come-and-discover {
+        width: 100%;
+        border: none;
+    }
+
+    .discover-text {
+        padding-left: 0;
+        padding-right: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    aside {
+        width: 100%;
+    }
+
+    .aside-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside p {
+        width: 90%;
+    }
+
+    .comments-sect {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .comment img {
+        width: 20%;
+    }
+    .comment-text {
+        padding-left: 20px;
+
+    }
+
+    #name,
+    #email {
+        padding: 0;
+    }
+
+}

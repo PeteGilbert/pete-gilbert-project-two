@@ -254,7 +254,7 @@ h2,
 h3,
 h4,
 .logo {
-  font-family: 'Dokdo', cursive;
+  font-family: "Dokdo", cursive;
   color: #FFC600;
 }
 
@@ -288,7 +288,7 @@ h4 {
 }
 
 .navigation-font {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   list-style: none;
@@ -303,7 +303,7 @@ h4 {
 
 p,
 address {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 2rem;
   line-height: 32px;
@@ -313,7 +313,7 @@ address {
 }
 
 ::-webkit-input-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 32px;
@@ -322,7 +322,7 @@ address {
 }
 
 :-ms-input-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 32px;
@@ -331,7 +331,7 @@ address {
 }
 
 ::-ms-input-placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 32px;
@@ -340,7 +340,7 @@ address {
 }
 
 ::placeholder {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 32px;
@@ -349,7 +349,7 @@ address {
 }
 
 textarea {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 32px;
@@ -358,7 +358,7 @@ textarea {
 }
 
 button {
-  font-family: 'Dokdo', cursive;
+  font-family: "Dokdo", cursive;
   font-size: 3.5rem;
   background-color: #555F02;
   color: white;
@@ -376,7 +376,7 @@ button:focus {
 }
 
 .home-header {
-  background-image: url(../mindnSoul-final-images/home-image-1.jpg);
+  background-image: url(../MindnSoul-final-images/home-image-1.jpg);
   background-size: cover;
   height: 100vh;
   display: -webkit-box;
@@ -781,7 +781,7 @@ footer {
 }
 
 .blog-header {
-  background-image: url(../mindnSoul-final-images/blog-image-1.jpg);
+  background-image: url(../MindnSoul-final-images/blog-image-1.jpg);
   background-size: cover;
   height: 100vh;
   display: -webkit-box;
@@ -1044,7 +1044,7 @@ form button {
 }
 
 .contact-header {
-  background-image: url(../mindnSoul-final-images/contact-image-1.jpg);
+  background-image: url(../MindnSoul-final-images/contact-image-1.jpg);
   background-size: cover;
   height: 100vh;
   display: -webkit-box;

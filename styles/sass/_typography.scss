@@ -1,10 +1,14 @@
-// Name of these variables is taken from style sheet, perhaps descriptive names are better?
+
 $ice-blue: #FAFFFE;
 $title-color: #FFC600;
 $background-color-2: #262725;
 $button-background: #555F02;
 $background-color-1: #1E140E;
+$dokdo: 'Dokdo', cursive;
+$lato: 'Lato', sans-serif;
 
+
+// Tried to balance being DRY with being readable/editable in future. 
 
 * {
     font-size: 62.5%;
@@ -20,7 +24,7 @@ h2,
 h3,
 h4, 
 .logo {
-    font-family: 'Dokdo', cursive;
+    font-family: $dokdo;
     color: $title-color;
 }
 
@@ -54,7 +58,7 @@ h4 {
 }
 
 .navigation-font {
-    font-family: 'Lato', sans-serif;
+    font-family: $lato;
     font-weight: 700;
     font-size: 2rem;
     list-style: none;
@@ -69,7 +73,7 @@ h4 {
 
 p,
 address {
-    font-family: 'Lato', sans-serif;
+    font-family: $lato;
     font-weight: 400;
     font-size: 2rem;
     line-height: 32px;
@@ -79,7 +83,7 @@ address {
 }
 
 ::placeholder {
-    font-family: 'Lato', sans-serif;
+    font-family: $lato;
     font-weight: 300;
     font-size: 2rem;
     line-height: 32px;
@@ -88,7 +92,7 @@ address {
 }
 
 textarea {
-    font-family: 'Lato', sans-serif;
+    font-family: $lato;
     font-weight: 300;
     font-size: 2rem;
     line-height: 32px;
@@ -97,7 +101,7 @@ textarea {
 }
 
 button {
-    font-family: 'Dokdo', cursive;
+    font-family: $dokdo;
     font-size: 3.5rem;
     background-color: $button-background;
     color: white;

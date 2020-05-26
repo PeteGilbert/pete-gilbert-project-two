@@ -1,12 +1,10 @@
-
-
 // Setting background color for ultra wide displays
 .home-body {
     background-color: $background-color-1;
 }
 
 .home-header {
-    background-image: url(../mindnSoul-final-images/home-image-1.jpg);
+    background-image: url(../MindnSoul-final-images/home-image-1.jpg);
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -347,6 +345,7 @@ footer {
         padding-left: 0;
         padding-right: 0;
         justify-content: center;
+        // I feel order is appropriate here as the image coming first for screenreaders isn't a problem. 
         order: 2;
     }
 
